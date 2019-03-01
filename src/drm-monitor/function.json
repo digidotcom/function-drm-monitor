@@ -1,0 +1,28 @@
+{
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": [
+                "post",
+                "put"
+            ]
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        },
+        {
+            "type": "serviceBus",
+            "name": "out",
+            "queueName": "drmposted",
+            "connection": "ServiceBus",
+            "accessRights_": "Manage",
+            "direction": "out"
+        }
+    ],
+    "disabled": false
+}
