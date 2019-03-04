@@ -1,4 +1,4 @@
-# Azure Digi Remote Manager integration
+# Azure Digi Remote Manager integration (part 1)
 
 Handles Digi Remote Manager monitor messages in a POST or PUT API.
 
@@ -16,9 +16,17 @@ See the simplified topic section for more information.
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
+## See part 2 
+
+Part 2 is a Logic App that reads the messages created by this application 
+from the service bus and adds it 
+
+Part 2 of this sample can be found at https://github.com/digidotcom/function-drm-consumer.
+ 
 ## Digi Remote Manager Instructions
 
-After deploying to Azure, navigate to the new Function App (sometimes called an App Service) using Azure Portal.
+After deploying both applications to Azure, navigate to the new Function App (sometimes called an App Service) using Azure Portal.
+
 Select the drm-monitor function and take note of the API endpoint and the function key code.
 
 The URL with the keycode looks something like this:
